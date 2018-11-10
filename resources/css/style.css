@@ -35,9 +35,16 @@ html {
 
 /* @media must be in ascending order or display won't be reponsive off */
 
+@media (min-width: 50px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media (min-width: 576px) {
   .container {
-    max-height: 560px;
+    max-width: 560px;
   }
 }
 
@@ -579,6 +586,15 @@ html {
   padding-left: 2.8%;
 }
 
+/* ------------------------------- */
+/* List Styles */
+/* ------------------------------- */
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
 
 /* ------------------------------- */
 /* Element Selectors */
@@ -620,11 +636,6 @@ hr {
   border-color: orange;
 }
 
-
-
-
-
-
 h3 {
   font-weight: 300;
   font-size: 110%;
@@ -633,8 +644,8 @@ h3 {
   text-transform: uppercase;
 } 
 
-a {
-  text-decoration: none;
+blockquote {
+  font-style: italic;
 }
 
 /* makes img responsive */
@@ -643,8 +654,8 @@ img {
   height: auto;
 }
 
-blockquote {
-  font-style: italic;
+a {
+  text-decoration: none;
 }
 
 cite {
@@ -653,6 +664,7 @@ cite {
   display: inline-block;
   margin-top: 7%;
 }
+
 
 /* ------------------------------- */
 /* Text Styles */
@@ -834,10 +846,11 @@ cite {
 /* ------------------------------- */
 
 .features-copy {
-	width: 70%;
-	margin: 32px auto;
+	width: 75%;
+	margin: 0 auto;
   text-align: left;
 }
+
 
 /* ------------------------------- */
 /* Favorite Meals */
@@ -873,6 +886,7 @@ cite {
   /* scale is 1.05 in order to get rid of weird white line below imgs */
 	transform: scale(1.06);
 }
+
 
 /* ------------------------------- */
 /* How-it-works */
@@ -914,7 +928,7 @@ cite {
 }
 
 /* ------------------------------- */
-/* Cities */
+/* Cities section */
 /* ------------------------------- */
 
 .twitter-link:link, .twitter-link:visited {
@@ -928,6 +942,7 @@ cite {
   color: #5975FF;
   border-bottom: 1px solid transparent;  
 }
+
 
 /* ------------------------------- */
 /* Testimonials */
@@ -944,6 +959,7 @@ cite {
   vertical-align: middle; 
   margin-right: 8px;
 }
+
 
 /* ------------------------------- */
 /* Sign up and Pricing Plans */
