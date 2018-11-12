@@ -34,7 +34,6 @@ html {
 }
 
 /* @media must be in ascending order or display won't be reponsive off */
-
 @media (min-width: 50px) {
   .container {
     padding-left: 15px;
@@ -548,6 +547,7 @@ html {
   align-items: center;
 }
 
+
 /* ------------------------------- */
 /* Text Styles */
 /* ------------------------------- */
@@ -564,9 +564,64 @@ html {
   text-align: center;
 }
 
+/* centers text for different @media sizes */
+@media (max-width: 576px) {
+  .media-lg-text-center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .media-lg-text-center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .media-lg-text-center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .media-lg-text-center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
 /* ------------------------------- */
 /* Spacing Styles */
 /* ------------------------------- */
+
+/* adds margin-bottom-4 for different @media sizes */
+@media (max-width: 576px) {
+  .media-sm-mb-2 {
+    margin-bottom: .5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .media-md-mb-2 {
+    margin-bottom: .5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .media-lg-mb-2 {
+    margin-bottom: .5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .media-xl-mb-2 {
+    margin-bottom: .5rem;
+  }
+}
 
 .m-0 {
   margin: 0;
@@ -1225,6 +1280,34 @@ cite {
 	float: right;
 	margin-right: 8%;
 }
+
+/* adds margin-bottom-4 for different @media sizes */
+@media (max-width: 576px) {
+  .works-iphone-img {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .works-iphone-img {
+    float: none;
+    margin-right: -10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .works-iphone-img {
+    float: none;
+    margin-right: 0;
+  }
+}
+/*
+@media (max-width: 1200px) {
+  .works-iphone-img {
+    float: none;
+  }
+}*/
 
 .works-numbers {
   /* Creates border box around the number */
