@@ -65,6 +65,47 @@ html {
   }
 }
 
+.container-70 {
+  position: relative;
+  max-width: 750px;
+  /* top and bottom are 0, left and right are auto-centered */
+  margin: 0 auto;
+  /* centers child elements */
+  text-align: center;
+}
+
+/* @media must be in ascending order or display won't be reponsive off */
+@media (min-width: 50px) {
+  .container-70 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-70 {
+    max-width: 560px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-70 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-70 {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-70 {
+    max-width: 750px;
+  }
+}
+
 
 /* ------------------------------- */
 /* Row */
@@ -463,6 +504,31 @@ html {
   }
 }
 
+/* ------------------------------- */
+/* Form Styles */
+/* ------------------------------- */
+
+.form-group {
+  display: -ms-flex;
+  display: flex;
+  flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  height: 2rem;
+  border: 1px solid #DDDDDD;
+  padding: 2px 7px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 
 /* ------------------------------- */
 /* Nav */
@@ -591,6 +657,35 @@ html {
     display: flex;
     justify-content: center;
   }
+}
+
+.text-copy {
+  text-align: left;
+  font-size: 100%;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-100 {
+  font-size: 100%;
+}
+
+.text-90 {
+  font-size: 90%;
+}
+
+.text-80 {
+  font-size: 80%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: #6c757d;
 }
 
 
@@ -1060,34 +1155,8 @@ cite {
   margin-top: 7%;
 }
 
-
-/* ------------------------------- */
-/* Text Styles */
-/* ------------------------------- */
-
-.text-copy {
-  text-align: left;
-  font-size: 100%;
-}
-
-.text-white {
-  color: white;
-}
-
-.text-100 {
-  font-size: 100%;
-}
-
-.text-90 {
-  font-size: 90%;
-}
-
-.text-80 {
-  font-size: 80%;
-}
-
-.text-center {
-  text-align: center;
+option {
+  font-weight: 300;
 }
 
 
