@@ -529,6 +529,10 @@ html {
   font-weight: 300;
 }
 
+textarea.form-control {
+  height: auto;
+}
+
 
 /* ------------------------------- */
 /* Nav */
@@ -613,6 +617,31 @@ html {
   align-items: center;
 }
 
+/* ------------------------------- */
+/* Footer Styles */
+/* ------------------------------- */
+
+.footer-nav {
+  display: flex;
+  /* flex elements are in a row */
+  flex-direction: row;
+  /* removes bullets from lists */
+  list-style: none;
+}
+
+.footer-item {
+  margin-right: 30px;
+}
+
+.footer-link {
+  font-size: 75%;
+  transition: color .5s ease-out;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
 
 /* ------------------------------- */
 /* Text Styles */
@@ -666,6 +695,10 @@ html {
 
 .text-white {
   color: white;
+}
+
+.text-darkgrey {
+  color: #9C9C9C;
 }
 
 .text-100 {
@@ -1099,6 +1132,10 @@ section {
   padding: 5% 0 5% 0;
 }
 
+footer {
+  padding: 5% 0 5% 0;
+}
+
 h1 {
 	text-transform: uppercase;
 	/* Decrease font-weight when using headings */
@@ -1179,6 +1216,10 @@ option {
 
 .background-grey {
   background-color: #EAE6E6;
+}
+
+.background-darkgrey {
+  background-color: #434141;
 }
 
 .background-lightgrey {
@@ -1447,4 +1488,40 @@ option {
 .signup-price span {
   font-size: 40%;
   font-weight: 300;
+}
+
+/* ------------------------------- */
+/* Footer */
+/* ------------------------------- */
+
+.facebook-link {
+  transition: color .5s ease-out;
+}
+
+.facebook-link:hover {
+  color: #694CFD;
+}
+
+.twitter-link {
+  transition: color .5s ease-out;
+}
+
+.twitter-link:hover {
+  color: #5F9FFF;
+}
+
+.googleplus-link {
+  transition: color .5s ease-out;
+}
+
+.googleplus-link:hover {
+  color: #FC6060;
+}
+
+.instagram-link {
+  transition: color .5s ease-out;
+}
+
+.instagram-link:hover {
+  color: #E8E474;
 }
