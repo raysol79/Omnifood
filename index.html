@@ -1,7 +1,9 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Omnifood</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Makes browsers render all elements more consistently and in line with modern standards --> 
 	<link rel="stylesheet" type="text/css" href="resources\css\normalize.css">
@@ -269,7 +271,7 @@
     <div class="container-70">
       <h2>We're happy to hear from you</h2>
       <hr class="mb-4">
-      <form class="p-0">
+      <form method="post" action="#" class="p-0">
         <div class="form-group text-left">
           <div class="col-4">
             <label for="contactName">Name</label>
@@ -288,10 +290,10 @@
         </div>
         <div class="form-group text-left"> 
           <div class="col-4">
-            <label for="find-us">How did you find us?</label>
+            <label for="contactFind-us">How did you find us?</label>
           </div>
           <div class="col-8">
-            <select id="find-us" class="form-control text-muted" name="find-us">
+            <select id="contactFind-us" class="form-control text-muted" name="contactFind-us">
               <option value="friends">Friends</option>
               <option value="search-engine">Search engine</option>
               <option value="advertisement">Advertisement</option>
@@ -301,24 +303,24 @@
         </div>
         <div class="form-group text-left">
           <div class="col-4">
-            <label for="newsletter">Newsletter?</label>
+            <label for="contactNewsletter">Newsletter?</label>
           </div>
           <div class="col-8">
-            <input type="checkbox" id="newsletter" name="newsletter" checked="true"> Yes, please
+            <input type="checkbox" id="contactNewsletter" name="contactNewsletter" checked="true"> Yes, please
           </div>
         </div>
         <div class="form-group text-left">
           <div class="col-4">
-            <label for="message">Drop us a line</label>
+            <label for="contactMessage">Drop us a line</label>
           </div>
           <div class="col-8">
-            <textarea id="message" class="form-control" name="message" rows="4" placeholder="Message"></textarea>
+            <textarea id="contactMessage" class="form-control" name="contactMessage" rows="4" placeholder="Message"></textarea>
           </div>
         </div>
         <div class="form-group text-left">
           <div class="col-4"></div>
           <div class="col-8">
-            <a href="#" class="btn">Send it!</a>
+            <input type="submit" class="btn" value="Send it!">
           </div>
         </div>
       </form>
@@ -344,7 +346,7 @@
         </ul>
       </div>
       <div class="row justify-content-center">
-        <p class="text-darkgrey text-80 mt-4">Copyright © 2018 by Omnifood. All rights reserved.</p>
+        <p class="text-darkgrey text-80 mt-4">Copyright &copy 2018 by Omnifood. All rights reserved.</p>
       </div>
     </div>
   </footer>
