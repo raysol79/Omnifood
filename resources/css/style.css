@@ -140,7 +140,8 @@ html {
 .col-auto {∏
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+          -webkit-box-flex: 0;
+              flex: 0 0 auto;
   max-width: none;
   width: 100%;
 }
@@ -731,6 +732,7 @@ textarea.form-control {
 .nav-link-underline {
   padding-bottom: 7px;
   -webkit-transition: border-bottom .5s ease-out;
+  -o-transition: border-bottom .5s ease-out;
   transition: border-bottom .5s ease-out;
 }
 
@@ -814,6 +816,7 @@ textarea.form-control {
 .footer-link {
   font-size: 75%;
   -webkit-transition: color .5s ease-out;
+  -o-transition: color .5s ease-out;
   transition: color .5s ease-out;
 }
 
@@ -1462,6 +1465,7 @@ option {
   border: 1px solid orange;
   /* color transition */
   -webkit-transition: background-color .5s ease-out;
+  -o-transition: background-color .5s ease-out;
   transition: background-color .5s ease-out;
 }
 
@@ -1526,6 +1530,8 @@ option {
 
 .header-background-img{
   background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.6)),to(rgba(0,0,0,.6))), url('../imgs/hero.jpg');
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('../imgs/hero.jpg');
+  background-image: -o-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('../imgs/hero.jpg');
   background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('../imgs/hero.jpg');
 }
 
@@ -1567,9 +1573,11 @@ option {
           filter: brightness(50%);
   /* zooms img */
   -webkit-transform: scale(1.15);
-          transform: scale(1.15);
+          -ms-transform: scale(1.15);
+      transform: scale(1.15);
   -webkit-transition: -webkit-transform .5s ease-out;
   transition: -webkit-transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
   transition: transform .5s ease-out;
   transition: transform .5s ease-out, -webkit-transform .5s ease-out;
 }
@@ -1580,7 +1588,8 @@ option {
           filter: brightness(100%);
   /* scale is 1.05 in order to get rid of weird white line below imgs */
   -webkit-transform: scale(1.06);
-          transform: scale(1.06);
+          -ms-transform: scale(1.06);
+      transform: scale(1.06);
 }
 
 
@@ -1652,6 +1661,7 @@ option {
   border-bottom: 1px solid orange;
   padding: 1px;
   -webkit-transition: border .5s ease-out, color .5s ease-out;
+  -o-transition: border .5s ease-out, color .5s ease-out;
   transition: border .5s ease-out, color .5s ease-out;  
 }
 
@@ -1667,6 +1677,8 @@ option {
 
 .testimonials-background-img {
   background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.7)),to(rgba(0,0,0,.7))), url('../imgs/back-customers.jpg');
+  background-image: -webkit-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('../imgs/back-customers.jpg');
+  background-image: -o-linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('../imgs/back-customers.jpg');
   background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('../imgs/back-customers.jpg');  
 }
 
@@ -1702,6 +1714,7 @@ option {
 
 .facebook-link {
   -webkit-transition: color .5s ease-out;
+  -o-transition: color .5s ease-out;
   transition: color .5s ease-out;
 }
 
@@ -1711,6 +1724,7 @@ option {
 
 .twitter-link {
   -webkit-transition: color .5s ease-out;
+  -o-transition: color .5s ease-out;
   transition: color .5s ease-out;
 }
 
@@ -1720,6 +1734,7 @@ option {
 
 .googleplus-link {
   -webkit-transition: color .5s ease-out;
+  -o-transition: color .5s ease-out;
   transition: color .5s ease-out;
 }
 
@@ -1729,6 +1744,7 @@ option {
 
 .instagram-link {
   -webkit-transition: color .5s ease-out;
+  -o-transition: color .5s ease-out;
   transition: color .5s ease-out;
 }
 
